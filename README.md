@@ -11,13 +11,17 @@ The traffic information is based on Bing maps traffic
 https://msdn.microsoft.com/en-us/library/ff701717.aspx
 
 Requirements:
-	BingMapsKey	(https://msdn.microsoft.com/de-de/library/gg650598.aspx)
-	Pushover Acoount (https://pushover.net)
-	
+```
+    BingMapsKey	(https://msdn.microsoft.com/de-de/library/gg650598.aspx)
+    Pushover Acoount (https://pushover.net)
+```
 You can call the script using cron jobs in the morning or afternoon:
-In the morning at 7:45 am:
-45 7 * * *	/usr/bin/python3 /path/to/script.py >/dev/null 2>&1
-In the afternoon every 30 minutes between 4 pm and 6 pm:
-0,30 16-18 * * *	/usr/bin/python3 /path/to/script.py >/dev/null 2>&1	
+- In the morning at 7:45 am:
+
+    45 7 * * *	/usr/bin/python3 /path/to/script.py >/dev/null 2>&1
+
+- In the afternoon every 30 minutes between 4 pm and 6 pm:
+
+    0,30 16-18 * * *	/usr/bin/python3 /path/to/script.py >/dev/null 2>&1	
 
 	
